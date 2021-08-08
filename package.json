@@ -1,0 +1,26 @@
+{
+  "uni-app": {
+      "scripts": {
+          "h5-aqc": { 
+          "title":"爱青城",
+		   "BROWSER":"Chrome",
+              "env": { 
+                  "UNI_PLATFORM": "h5" 
+              },
+              "define": { 
+                  "H5-AQC": true 
+              }
+          },
+		  "h5-zt": {
+		  "title":"政通",
+		  "BROWSER":"Chrome",
+		      "env": { 
+		          "UNI_PLATFORM": "h5" 
+		      },
+		      "define": { 
+		          "H5-ZT": true 
+		      }
+		  }
+      }	  
+  }
+}
