@@ -1,26 +1,44 @@
 {
+  "name": "newuniapp",
+  "version": "1.0.0",
+  "description": "UNiAPP 基础配置",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maidoudeniuniu/myUniapp.git"
+  },
+  "author": "zeng lifeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maidoudeniuniu/myUniapp/issues"
+  },
+  "homepage": "https://github.com/maidoudeniuniu/myUniapp#readme"
+  ,
   "uni-app": {
-      "scripts": {
-          "h5-aqc": { 
-          "title":"爱青城",
-		   "BROWSER":"Chrome",
-              "env": { 
-                  "UNI_PLATFORM": "h5" 
-              },
-              "define": { 
-                  "H5-AQC": true 
-              }
-          },
-		  "h5-zt": {
-		  "title":"政通",
-		  "BROWSER":"Chrome",
-		      "env": { 
-		          "UNI_PLATFORM": "h5" 
-		      },
-		      "define": { 
-		          "H5-ZT": true 
-		      }
-		  }
-      }	  
-  }
+        "scripts": {
+            "h5-aqc": { 
+            "title":"爱青城",
+    		   "BROWSER":"Chrome",
+                "env": { 
+                    "UNI_PLATFORM": "h5" 
+                },
+                "define": { 
+                    "H5-AQC": true 
+                }
+            },
+    		  "h5-zt": {
+    		  "title":"政通",
+    		  "BROWSER":"Chrome",
+    		      "env": { 
+    		          "UNI_PLATFORM": "h5" 
+    		      },
+    		      "define": { 
+    		          "H5-ZT": true 
+    		      }
+    		  }
+        }	  
+    }
 }

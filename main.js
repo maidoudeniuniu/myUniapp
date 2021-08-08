@@ -5,15 +5,22 @@ Vue.config.productionTip = false
 
 App.mpType = 'app'
 
-
-// #ifdef H5 | H5-AQC
-   console.log("爱情诚")
-// #endif
+import uView from 'uview-ui'
+Vue.use(uView)
 
 
-// #ifdef H5 | H5-ZT
-  console.log("政通")
-// #endif
+
+//工具类
+import CCU from './common/utils.js'
+Vue.prototype.$CCU = CCU
+
+
+//针对h5 
+import { PlatForm, jsApiPlugin } from "./lib/index.esm";
+
+if(window){
+	Vue.use(jsApiPlugin, {platform:PlatForm.AQC});
+ }
 
 
 const app = new Vue({

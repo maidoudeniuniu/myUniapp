@@ -1,16 +1,104 @@
 {
+	"easycom": {
+	  "autoscan": true,
+	  "custom": {
+	    // "^uni-(.*)": "@/components/uni-$1.vue", // 匹配components目录内的vue文件
+	    "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	  }
+	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/home/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "智慧停车"
+				//"navigationStyle": "custom"
 			}
-		}
+		},
+		{
+			"path": "pages/list/index",
+			"style": {
+				"navigationBarTitleText": "智慧停车"
+				//"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+				//"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/nav/nav",
+			"style": {
+				"navigationBarTitleText": "导航"
+				//"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "消息"
+				//"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/aqcjsapi/index",
+			"style": {
+				"navigationBarTitleText": "爱青城"
+				//"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/router/router",
+			"style": {
+				"navigationBarTitleText": "路由"
+				//"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/router/routerab",
+			"style": {
+				"navigationBarTitleText": "路由2"
+				//"navigationStyle": "custom"
+			}
+		}  
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+		"navigationBarTitleText": "智慧停车",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+	    "color": "#7A7E83",
+	    "selectedColor": "#1989fa",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [
+			{
+			 "pagePath": "pages/home/index",
+			 "iconPath": "static/parkingInActive.png",
+			 "selectedIconPath": "static/parkingActive.png",
+			 "text": "停车"
+			},
+			{
+			 "pagePath": "pages/nav/nav",
+			 "iconPath": "static/navInActive.png",
+			 "selectedIconPath": "static/navActive.png",
+			 "text": "导航"
+			},
+			{
+			 "pagePath": "pages/message/message",
+			 "iconPath": "static/messageInActive.png",
+			 "selectedIconPath": "static/messageActive.png",
+			 "text": "消息"
+			},
+			{
+			 "pagePath": "pages/login/login",
+			 "iconPath": "static/myInactive.png",
+			 "selectedIconPath": "static/myactive.png",
+			 "text": "我的"
+			}
+		]}
 }
